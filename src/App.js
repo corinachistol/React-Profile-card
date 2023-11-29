@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {Avatar, Intro, SkillList} from './components/components'
+export default function App() {
+    return (
+      <div className="card">
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+        <Avatar source="../91-450x250.jpg" name="profile picture" />
 
-export default App;
+        <div className="data">
+          <Intro name="Jonas Schmedtmann"  description="Full-stack web developer and teacher at Udemy. When not coding or preparing a course, I like to play board games, to cook (and eat), or to just enjoy the Portuguesse sunt at the beach."/>
+      
+          <SkillList />
+        </div>
+      </div>
+    );
+  }
+  
