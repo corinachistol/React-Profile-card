@@ -39,13 +39,6 @@ function SkillList() {
       {skills.map(skill=>(
         <Skill color={skill.color} skills={skill.skill} level={skill.level} />
       ))}
-
-      {/* <Skill color="lightblue" skills="HTML+CSS" emoji="👍" />
-      <Skill color="yellow" skills="Javascript" emoji="🧑" />
-      <Skill color="green" skills="Web Design" emoji="🖔" />
-      <Skill color="red" skills="Git and GitHub" emoji="🖔" />
-      <Skill color="darkblue" skills="React" emoji="🖔" />
-      <Skill color="orange" skills="Svelte" emoji="🖔" /> */}
     </div>
   )
 }
